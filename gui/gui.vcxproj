@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{59e9dbec-96aa-4a7b-8178-da7a4ca1be72}</ProjectGuid>
+    <RootNamespace>gui</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\L.H\packages\PainterEngine;E:\L.H\packages\PainterEngine\project;$(IncludePath)</IncludePath>
+    <AllProjectIncludesArePublic>false</AllProjectIncludesArePublic>
+    <AllProjectBMIsArePublic>false</AllProjectBMIsArePublic>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <TranslateIncludes>false</TranslateIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\L.H\packages\PainterEngine\architecture\PainterEngine.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\architecture\PainterEngine_Designer.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\architecture\PainterEngine_Runtime.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_3D.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_AES.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_ANN.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Arle.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Base64.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_BaseGeo.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Bitmap.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Core.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_curve25519.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Delaunay.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Effect.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Font.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Hashmap.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Http.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Huffman.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_ImageFilter.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_KalmanFilter.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_KarplusStrong.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Lagrange.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Linker.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_List.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Log.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_LTI.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_MathTable.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Memory.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_MemoryPool.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_MFCC.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Midi.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Packet.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Piano.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Piano_mod.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_PointsMesh.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Quadtree.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Quicksort.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_rbtree.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Sha1.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Sha256.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Signal.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Sound.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_SoundModule.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_String.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Surface.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Texture.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_TRaw.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Tuning.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Typedef.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Vector.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_Wave.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\core\PX_WebSocket.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_2dxCommon.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_3D_ObjData.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Animation.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Compiler.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_FoxLogo.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Json.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Kernel.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Lexer.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_LiveFramework.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Modbus.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_MQTT.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Animation.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_AsmDebugger.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_AutoText.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CheckBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_COMBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CounterDown.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CursorButton.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_DataBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_DesignerBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Edit.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Executer.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Explorer.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Image.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_IPBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Joystick.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Label.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_List.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_MemoryView.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Menu.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_MessageBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ModbusVarBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Oscilloscope.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Panc.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Piano.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Printer.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Processbar.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Protractor.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_PushButton.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RadioBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RankPanel.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RingProcessbar.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RingProgress.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ScaleBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ScrollArea.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Selectbar.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Sliderbar.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_TransformAdapter.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_VarBox.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Various.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_VirtualKeyboard.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Widget.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Partical.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Resource.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_ScriptCore.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_ASMCompiler.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_Interpreter.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_VM.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_Sync.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_UI.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\kernel\PX_World.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\platform\windows\px_display.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\project\PainterEngine_Application.h" />
+    <ClInclude Include="E:\L.H\packages\PainterEngine\project\PainterEngine_Startup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\L.H\packages\PainterEngine\architecture\PainterEngine_Designer.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\architecture\PainterEngine_Runtime.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_3D.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_AES.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_ANN.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Arle.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Base64.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_BaseGeo.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Bitmap.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_curve25519.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Delaunay.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Effect.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Font.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Hashmap.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Http.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Huffman.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_ImageFilter.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_KalmanFilter.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_KarplusStrong.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Lagrange.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Linker.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_List.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Log.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_LTI.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Memory.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_MemoryPool.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_MFCC.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Midi.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Packet.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Piano.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_PointsMesh.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Quadtree.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Quicksort.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_rbtree.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Sha1.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Sha256.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Signal.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Sound.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_SoundModule.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_String.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Surface.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Texture.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_TRaw.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_TriangleCross.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Tuning.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Typedef.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Vector.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_Wave.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\core\PX_WebSocket.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_3D_ObjData.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Animation.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Compiler.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Json.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Lexer.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_LiveFramework.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Modbus.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_MQTT.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Animation.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_AsmDebugger.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_AutoText.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CheckBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_COMBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CounterDown.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_CursorButton.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_DataBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_DesignerBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Edit.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Executer.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Explorer.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Image.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_IPBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Joystick.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Label.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_List.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_MemoryView.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Menu.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_MessageBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ModbusVarBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Oscilloscope.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Panc.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Piano.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Printer.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Processbar.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Protractor.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_PushButton.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RadioBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RankPanel.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RingProcessbar.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_RingProgress.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ScaleBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_ScrollArea.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Selectbar.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Sliderbar.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_TransformAdapter.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_VarBox.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Various.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_VirtualKeyboard.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Object_Widget.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Partical.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Resource.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_ASMCompiler.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_Interpreter.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Script_VM.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_Sync.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_UI.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\kernel\PX_World.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_audio.cpp" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_display.cpp" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_file.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_main.cpp" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_serialport.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_tcp.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_thread.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_time.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\platform\windows\px_udp.c" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\project\PainterEngine_Application.cpp" />
+    <ClCompile Include="E:\L.H\packages\PainterEngine\project\PainterEngine_Startup.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
