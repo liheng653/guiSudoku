@@ -7,7 +7,6 @@ using ints = vector<int>;
 bool solve(ints& state);
 PX_Application App;
 
-PX_FontModule fm;
 PX_Object* root;
 PX_Object* pButton;
 ints allnums{ 1,2,3,4,5,6,7,8,9 };
@@ -74,8 +73,8 @@ void ButtonCallBack(PX_Object*, PX_Object_Event e, px_void* user_ptr) {
 }
 px_bool PX_ApplicationInitialize(PX_Application* pApp, px_int screen_width, px_int screen_height)
 {
-	PX_ApplicationInitializeDefault(&pApp->runtime, screen_width, screen_height);//Ä¬ÈÏÏÔÊ¾º¯Êý
-	root = PX_ObjectCreate(&pApp->runtime.mp_ui, PX_NULL, 0, 0, 0, 0, 0, 0);//´´½¨¸ù¶ÔÏó
+	PX_ApplicationInitializeDefault(&pApp->runtime, screen_width, screen_height);//é»˜è®¤æ˜¾ç¤ºå‡½æ•°
+	root = PX_ObjectCreate(&pApp->runtime.mp_ui, PX_NULL, 0, 0, 0, 0, 0, 0);//åˆ›å»ºæ ¹å¯¹è±¡
 	/*pEdit = PX_Object_EditCreate(&pApp->runtime.mp_ui, PX_NULL, 0, 0, 50, 50, NULL);*/
 	Editer.create(&pApp->runtime.mp_ui);
 	Editer.SetMaxTextLength(1);
